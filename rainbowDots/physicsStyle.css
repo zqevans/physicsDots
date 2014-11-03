@@ -1,0 +1,93 @@
+body{
+  font-family: "Open Sans", Georgia, sans-serif;
+  background: black;
+  overflow: hidden;
+}
+canvas{
+  padding: 0px;
+  margin: 0px;
+}
+#clearButton{
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  border-radius: 5px;
+  moz-border-radius: 5px;
+  webkit-border-radius: 5px;   
+  background: rgb(240, 240, 240);
+  padding: 3px;
+}
+#audioInfo{
+  position: fixed;
+  top: 95%
+}
+#colorSchemePicker{
+  position:fixed;
+  top: 10px;
+  right: 30px;
+  background:black;
+  border: 2px solid white;
+  border-radius: 10px;
+  moz-border-radius: 10px;
+  webkit-border-radius: 10px;
+}
+
+.colorRow{
+  overflow: hidden;
+  clear: left;
+  float: left;
+  padding: 5px;
+}
+
+.schemeName{
+  float: left;
+  width: 90px;
+  color:white;
+}
+
+#openSchemes{
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  color: black;
+  padding:5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  moz-border-radius: 10px;
+  webkit-border-radius: 10px;
+  display: inline;
+  float:left;
+  clear: left;
+  background: rgb(240, 240, 240);
+}
+
+.defaultColor{
+  float:left;
+  width:80px;
+  position:relative;
+  padding: 10px;
+  background: -moz-linear-gradient( left ,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 255, 0, 1) 15%,
+        rgba(0, 255, 0, 1) 30%,
+        rgba(0, 255, 255, 1) 50%,
+        rgba(0, 0, 255, 1) 65%,
+        rgba(255, 0, 255, 1) 80%,
+        rgba(255, 0, 0, 1) 100%);
+ background: -webkit-gradient(linear,  left top, right top,
+        color-stop(0%, rgba(255, 0, 0, 1)), 
+        color-stop(15%, rgba(255, 255, 0, 1)),
+        color-stop(30%, rgba(0, 255, 0, 1)),
+        color-stop(50%, rgba(0, 255, 255, 1)),
+        color-stop(65%, rgba(0, 0, 255, 1)),
+        color-stop(80%, rgba(255, 0, 255, 1)),
+        color-stop(100%, rgba(255, 0, 0, 1)));
+		
+}
+
+.colorBlock{
+  position: relative;
+  float: left;
+  display: inline;
+  padding:10px;
+}
