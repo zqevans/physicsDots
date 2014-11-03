@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Physics dots test</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="rainbowDots.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="physicsStyle.css"/>
+</head>
+<body>
+<!--
+<select id="colorScheme">
+<option value="Default">Default</option>
+</select>
+-->
+<div id="openSchemes">Colors</div>
+<div id="colorSchemePicker">
+
+</div>
+<canvas id="physicsCanvas" width="1800" height="800" style="border: 1px solid black"></canvas>
+
+<div id="audioInfo">
+	<audio id="audioTag" controls loop>
+	  <source id="piano" src="http://freedownloads.last.fm/download/610610928/Re.mp3" type="audio/mp3">
+	  <source id="america" src="https://www.dropbox.com/s/b0tdsxsxaah396b/americaTrim.mp3?raw=1" type="audio/mp3">
+	  <p>Your browser does not support the audio tag<p>
+	</audio>
+</div>
+<div id="clearButton">
+ <div id="clearScreen">Clear</div>
+</div>
+<script>
+
+  var physicsCanvas = document.getElementById("physicsCanvas");
+  var ctx = physicsCanvas.getContext("2d");
+  APP.startApp(physicsCanvas);
+ 
+</script>
+</body>
+</html>
